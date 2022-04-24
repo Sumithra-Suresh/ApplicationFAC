@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Application Site</title>
+
+        <!--Google font - 'Noticia Text'-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+        <!-- Link to Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header -->
+            <header>
+                <div id="logo">
+                    <a href="./index.html" class="title1">Sumithra Suresh</a>
+                    <p class="title2">Front-end enthusiast</p>
+                </div>
+                <!--Nav Menu-->
+                <nav class="topnav" id="navbar">
+                    <a href="./index.html">HOME</a>
+                    <a href="./aboutme.html">ABOUT ME</a>
+                    <a href="./projects.html">PROJECTS</a>
+                    <a href="./contact.html">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </header>
+            <!-- Main section  -->
+            <div class="wrapper">
+                <div class="about-page">
+                    <div class="about-main-sec">
+                        <h1 class="h1-like thin">Resume</h1>
+                        <hr>
+                        <div class="about-main-info_wrapper">
+                            <!-- Info card #1 => Professional Info -->
+                            <div class="about-main-info-card">
+                                <div class="about-main-info-card-icon">
+                                    <h4 class="thin">Professional</h4>
+                                    <h4 class="thin">Info</h4>
+                                </div>
+                                <div class="about-main-info-card-desc">
+                                    <p>
+                                        My professional experience is mainly on C/C++. Recently I have started learning about HTML, CSS, JavaScript and React. I am fascinated by the web technologies and would like to explore more in that direction.
+                                    </p>
+                                </div>
+                            </div> <!-- about info card #1 => icon & info card description -->
+                            <hr>
+                            <!-- Info card #2 => Work Experience -->
+                            <div class="about-main-info-card">
+                                <div class="about-main-info-card-icon">
+                                    <h4 class="thin">Work</h4>
+                                    <h4 class="thin">Experience</h4>
+                                </div>
+                                <div class="about-main-info-card-desc">
+                                    <div>
+                                        <h3>NEC Telecom Modus, Leatherhead, UK</h3>
+                                        <h4>Senior Software Engineer</h4><br>
+                                        <p>
+                                            Worked in the Radio System Division of NEC, mainly involved in developing software for RLC and MAC for 3G and 4G base stations.
+                                        </p><br><br>
+                                    </div>
+                                    <div>
+                                        <h3>Firstline Infotech, Chennai, India</h3>
+                                        <h4>Programmer</h4><br>
+                                        <p>
+                                            Worked in university ERP project , mainly involved in developing JAVA forms for various modules. 
+                                        </p><br><br>
+                                    </div>
+                                </div>
+                            </div> <!-- about info card #2 => icon & info card description -->
+                            <hr>
+                            <!-- Info card #3 => Education -->
+                            <div class="about-main-info-card">
+                                <div class="about-main-info-card-icon">
+                                    <h4 class="thin">Education</h4>
+                                </div>
+                                <div class="about-main-info-card-desc">
+                                    <div>
+                                        <h3>University of Surrey, UK</h3>
+                                        <h4>MSc in Communication Network and Software</h4><br>
+                                        <p>
+                                            Key Modules: Mobile & Personal Communications, Data & Internet Networking, Object-Oriented Design & C++, Multimedia System & Component Technology, Network & Service Management & Control Operating System for Mobile Systems Programming and Principles of Telecom and Packet Networks. 
+                                        </p><br><br>
+                                    </div>
+                                    <div>
+                                        <h3>Thiagarajar College of Engineering, India</h3>
+                                        <h4>Bachelor of Engineering in Computer Science</h4><br>
+                                        <p>
+                                            Key Modules: Data Structures, System Software, Computer Communication, Design & Analysis of Algorithms, Operating Systems, Computer Organization & Design, Programming in C, Object Oriented Programming in C++,  Resource Management Techniques, Software Engineering, JAVA Programming, Principles of Compiler Design, Database Management System
+                                        </p>
+                                    </div>
+                                </div>
+                            </div><!-- about info card #3 => icon & info card description -->
+                        </div><!-- about main info wrapper -->
+                    </div><!-- about main section -->
+                    <div class="about-side-sec">
+                        <div class="about-side-info-card">
+                            <div class="about-icon-btn"><i class="fa-solid fa-globe fa-style-about" ></i></div>
+                            <br>
+                            <h3 class="thin">Languages</h3><br>
+                            <hr><br>
+                            <ul>
+                                <li>C/C++</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                                <li>React</li>
+                            </ul>
+                        </div> <!-- side info card #1 => icon, heading & list -->
+                        <br><br>
+                        <div class="about-side-info-card">
+                            <div class="about-icon-btn"><i class="fa-solid fa-wrench fa-style-about"></i></div>
+                            <br>
+                            <h3 class="thin">Tools</h3>
+                            <br><hr><br>
+                            <ul>
+                                <li>VS Code</li>
+                                <li>Atom</li>
+                                <li>Codepen</li>
+                                <li>Replit</li>
+                                <li>Git & Github</li>
+                                <li>Jira</li>
+                                <li>Hudson</li>
+                                <li>SVN</li>
+                            </ul>
+                        </div> <!-- side info card #2 => icon, heading & list -->
+                    </div> <!-- side section =>contains 2 side information card -->
+                </div> <!-- about main section => main section & side section  -->
+            </div> <!-- wrapper => common for all pages -->
+        </div> <!-- container => Header & Main section -->
+        <!-- Full width footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-card">
+                    <div class="footer-icon-btn"><i class="fa-solid fa-phone fa-style" ></i></div>
+                    <div class="footer-card-details">
+                        <p>Call</p>
+                        <p>M: 0746 981 9413</p>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <div class="footer-icon-btn"><i class="fa-solid fa-envelope fa-style" ></i></div>
+                    <div class="footer-card-details">
+                        <p>Contact</p>
+                        <p>jasi_sumi@hotmail.co.uk</p>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <div class="footer-icon-btn"><i class="fa-solid fa-plus fa-style" ></i></div>
+                    <div class="footer-card-details">
+                        <p>Follow me</p>
+                        <p>
+                            <a href="https://github.com/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.freecodecamp.org/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-card">
+                    <div class="footer-icon-btn"><i class="fa-solid fa-copyright fa-style" ></i></div>
+                    <div class="footer-card-details">
+                        <p>&copy; 2022 by SS</p>
+                        <p>Proudly created for F&C</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- link to JS file -->
+        <script src="script.js"></script>
+    </body>
+</html>

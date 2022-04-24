@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Application Site</title>
+        
+        <!--Google font - 'Noticia Text'--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+        <!-- Link to Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header -->
+            <header>
+                <div id="logo">
+                    <a href="./index.html" class="title1">Sumithra Suresh</a>
+                    <p class="title2">Front-end enthusiast</p>
+                </div>
+                <!--Nav Menu-->
+                <nav class="topnav" id="navbar">
+                    <a href="./index.html" id="index-home">HOME</a>
+                    <a href="./aboutme.html">ABOUT ME</a>
+                    <a href="./projects.html">PROJECTS</a>
+                    <a href="./contact.html">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </header>
+            <!-- Main section  -->
+            <div class="wrapper">
+                <div class="main-page">
+                    <div class="profile-img">
+                        <img class="profile-img" src="./images/profilePic.jpg" alt="profile picture"/>
+                    </div>
+                    <div class="welcome-msg">
+                        <h1 class="h1-like">Hello,</h1>
+                        <h2 class="h2-like">a bit about my journey:</h2>
+                    </div>
+                    <div class="nav-button nested-flex">
+                        <a id="github" href="https://github.com/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-github fa-larger-icon"></i></a>
+                        <a id="work" href="https://www.freecodecamp.org/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-free-code-camp fa-larger-icon"></i></a>
+                        <a href="./whyfac.html" id="skills">WHY FAC</a>
+                    </div>
+                    <div class="intro">
+                        <p>
+                            My professional experience is mainly on C/C++. Recently I have started learning about HTML, CSS, JavaScript and React. I am fascinated by the web technologies and would like to explore more in that direction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-card">
+                    <div class="footer-icon-btn"><i class="fa-solid fa-phone fa-style" ></i></div>
+                    <div class="footer-card-details">
+                        <p>Call</p>
+                        <p>M: 0746 981 9413</p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-envelope fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Contact</p>
+                        <p>jasi_sumi@hotmail.co.uk</p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-plus fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Follow me</p>
+                        <p>
+                            <a href="https://github.com/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.freecodecamp.org/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-copyright fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>&copy; 2022 by SS</p>
+                        <p>Proudly created for F&C</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Application Site</title>  
+
+        <!--Google font - 'Noticia Text'--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+        
+        <!-- Link to fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header -->
+            <header>
+                <div id="logo">
+                    <a href="./index.html" class="title1">Sumithra Suresh</a>
+                    <p class="title2">Front-end enthusiast</p>
+                </div>
+                <!--Nav Menu-->
+                <nav class="topnav" id="navbar">
+                    <a href="./index.html">HOME</a>
+                    <a href="./aboutme.html">ABOUT ME</a>
+                    <a href="./projects.html">PROJECTS</a>
+                    <a href="./contact.html">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </header>
+            <!-- Main section  -->
+            <div class="wrapper">
+                <div class="project-page">
+                    <h1 class="h1-like">Latest Projects</h1><br>
+                    <hr>
+                    <div class="project-info-wrapper">
+                        <!-- Project 01 -->
+                        <div class="project-info-card">
+                            <!-- image slider container--> 
+                            <div class="slideshow-container" id="slideshow-container-1">
+                                <div class="mySlides-1 fade">
+                                    <img class="project-img" src="./images/codename1.png" >
+                                </div>
+                                <div class="mySlides-1 fade">    
+                                    <img class="project-img" src="./images/codename2.png" >
+                                </div>
+                                <div class="mySlides-1 fade">
+                                    <img class="project-img" src="./images/codename3.png" >
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1,'slideshow-container-1')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,'slideshow-container-1')">&#10095;</a>
+                            </div> 
+                            <!-- project info -->                                                                                
+                            <div class="project-info">
+                                <div class="project-title-icon">Project | 01 </div>
+                                <br>
+                                <hr>
+                                <div class="project-title">
+                                    <h3>Codename Validator &nbsp;
+                                        <a href="https://sumithra-suresh.github.io/CodenameValidator/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="project-desc">                                    
+                                    <p>This project is to exercise DOM manipulation and managing user input.</p>
+                                </div>
+                            </div> <!-- project info => icon, title, description & link to github -->
+                        </div> <!-- project info card #1 => image slider & project info -->
+                        <hr>
+                        <!-- Project 02 -->
+                        <div class="project-info-card">
+                            <!-- image slider container--> 
+                            <div class="slideshow-container" id="slideshow-container-2">
+                                <div class="mySlides-2 fade">
+                                    <img class="project-img" src="./images/jsArr1.png" >
+                                </div>
+                                <div class="mySlides-2 fade"> 
+                                    <img class="project-img" src="./images/jsArr2.png" >
+                                </div>
+                                <div class="mySlides-2 fade">
+                                    <img class="project-img" src="./images/jsArr3.png" >
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1,'slideshow-container-2')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,'slideshow-container-2')">&#10095;</a>
+                            </div>
+                            <!-- project info -->
+                            <div class="project-info">
+                                <div class="project-title-icon">Project | 02 </div>
+                                <br>
+                                <hr>
+                                <div class="project-title">
+                                    <h3>JS Arrays &nbsp;
+                                        <a href="https://sumithra-suresh.github.io/JSArrays/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="project-desc">
+                                    <p>This project aims to build a front-end which interacts with a set of functions. Each function focuses on using a different array method.</p>
+                                </div>
+                            </div><!-- project info => icon, title, description & link to github -->
+                        </div> <!-- project info card #2 => image slider & project info -->
+                        <hr>
+                        <!-- Project 03 -->
+                        <div class="project-info-card">
+                            <!-- image slider container--> 
+                            <div class="slideshow-container" id="slideshow-container-3">
+                                <div class="mySlides-3 fade">
+                                    <img class="project-img" src="./images/imageSlider1.png" >
+                                </div>
+                                <div class="mySlides-3 fade">
+                                    <img class="project-img" src="./images/imageSlider2.png" >
+                                </div>
+                                <div class="mySlides-3 fade">
+                                    <img class="project-img" src="./images/imageSlider3.png" >
+                                </div>
+                                <!-- Next and previous buttons -->
+                                <a class="prev" onclick="plusSlides(-1,'slideshow-container-3')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1,'slideshow-container-3')">&#10095;</a>
+                            </div>
+                            <!-- project info -->
+                            <div class="project-info">
+                                <div class="project-title-icon">Project | 03 </div>
+                                <br>
+                                <hr>
+                                <div class="project-title">
+                                    <h3>Image Carousel &nbsp;
+                                        <a href="https://sumithra-suresh.github.io/ImageCarousel/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="project-desc">
+                                    <p>A slideshow of images with previous/next arrow buttons that show/hide the next image in a list.A set of dots which tell the user which image is showing and can be clicked to skip to a particular image</p>
+                                </div>
+                            </div> <!-- project info => icon, title, description & link to github -->
+                        </div> <!-- project info card #3 => image slider & project info -->
+                        <hr>
+                    </div> <!-- project info page => contains project info card  --> 
+                    <br>
+                    <div class="project-para">
+                        <p>To see more or discuss let's talk >></p> 
+                        <div class="talk">
+                            <!--h4 class="thin">Let's talk</h4-->
+                            <a href="./contact.html" class="thin">Let's talk</a>
+                        </div>                                                                           
+                    </div>  
+                </div> <!-- Project page -->
+            </div> <!-- wrapper => common to all pages -->
+        </div>
+        <!-- Full width footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-phone fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Call</p>
+                        <p>M: 0746 981 9413</p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-envelope fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Contact</p>
+                        <p>jasi_sumi@hotmail.co.uk</p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-plus fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Follow me</p>
+                        <p>
+                            <a href="https://github.com/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.freecodecamp.org/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-copyright fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>&copy; 2022 by SS</p>
+                        <p>Proudly created for F&C</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Link to JS file -->
+        <script src="script.js"></script> 
+    </body>
+</html>

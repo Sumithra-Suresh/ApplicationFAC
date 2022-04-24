@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Application Site</title>
+
+        <!--Google font - 'Noticia Text'--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+        
+        <!-- Link to font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <!-- Link to stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- Header -->
+            <header>
+                <div id="logo">
+                    <a href="./index.html" class="title1">Sumithra Suresh</a>
+                    <p class="title2">Front-end enthusiast</p>
+                </div>
+                <!--Nav Menu-->
+                <nav class="topnav" id="navbar">
+                    <a href="./index.html">HOME</a>
+                    <a href="./aboutme.html">ABOUT ME</a>
+                    <a href="./projects.html">PROJECTS</a>
+                    <a href="./contact.html">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </header>
+            <!-- Main section  -->
+            <div class="wrapper">
+                <div class="why-fac-page">
+                    <div class="why-fac-main-sec">
+                        <h2 class="h2-like thin">Why Founders & Coders</h2>
+                        <hr>
+                        <div class="why-fac-main-info_wrapper">
+                            <!-- Professional Info -->
+                            <div class="why-fac-main-info-card">
+                                <div class="why-fac-main-info-card-icon">
+                                    <i class="fa-solid fa-folder-tree fa-larger-icon"></i>
+                                </div>
+                                <div class="why-fac-main-info-card-desc">
+                                    <p>
+                                        <strong>Well strucutred</strong>. 3-6 months pre-preparation absolutey helped me to understand all the fundamentals. I came to know about freecodecamp through this application process, which is a big plus. 
+                                    </p><br>
+                                    <p>
+                                        'Understand the fundamentals' had narrowed down the topics to learn to get started. That helped me to learn the basics easily and apply my knowledge to practice through prompts.
+                                    </p>
+                                </div>
+                            </div> <!-- info card #1 => icon & description -->
+                            <hr>
+                            <div class="why-fac-main-info-card">
+                                <div class="why-fac-main-info-card-icon">
+                                    <i class="fa-brands fa-discord fa-larger-icon"></i>
+                                </div>
+                                <div class="why-fac-main-info-card-desc">
+                                    <p>
+                                    <strong>Support network</strong>. It is common practice to offer support to the student undertaking courses. This is the first time I came across applicant learning eco system, very unique approach. This gave me an assurance in ths learning journey.
+                                    </p>
+                                </div>
+                            </div> <!-- info card #2 => icon & description -->
+                            <hr>
+                            <div class="why-fac-main-info-card">
+                                <div class="why-fac-main-info-card-icon">   
+                                    <i class="fa-solid fa-bars-progress fa-larger-icon"></i>
+                                </div>
+                                <div class="why-fac-main-info-card-desc">
+                                    <p>
+                                        <strong>Prompts gave me confidence</strong>. It helped me to sharpen my skills. Knowing Git & Github opened a way to showcase my projects. All the prompts are challengable and helped me to approach the problem in differnt prespective.
+                                    </p>
+                                </div>
+                            </div> <!-- info card #3 => icon & description -->
+                            <hr>
+                        </div> <!-- main info wrapper => 3 * main-info-card -->
+                    </div> <!-- main section -->
+                    <div class="why-fac-side-sec">
+                        <div class="why-fac-side-info-card">
+                            <div class="why-fac-icon-btn"><i class="fa-solid fa-bars-progress fa-style-about" ></i></div><br>
+                            <h3 class="thin">Links to the prompts</h3><br>
+                            <hr><br>
+                            <ul>
+                                <li><a href="https://sumithra-suresh.github.io/TributePage/" target="_blank">Tribute Page</a></li>
+                                <li><a href="https://replit.com/@Sumithra-Suresh" target="_blank">Functions</a></li>
+                                <li><a href="https://sumithra-suresh.github.io/CodenameValidator/" target="_blank">DOM</a></li>
+                                <li><a href="https://sumithra-suresh.github.io/JSArrays/" target="_blank">Array Methods</a></li>
+                                <li><a href="https://github.com/Sumithra-Suresh" target="_blank">Git & Github</a></li>
+                                <li><a href="https://sumithra-suresh.github.io/FlexboxGallery/" target="_blank">Flexbox</a></li>
+                                <li><a href="https://replit.com/@Sumithra-Suresh" target="_blank">Objects</a></li>
+                                <li><a href="https://sumithra-suresh.github.io/ImageCarousel/" target="_blank">Build a Feature</a></li>
+                            </ul>
+                        </div><!-- info card => icon, heading & list -->
+                        <br><br>
+                        <div class="why-fac-side-info-card">
+                            <div class="why-fac-icon-btn"><i class="fa-solid fa-trophy fa-style-about" ></i></div><br>
+                            <h3 class="thin">Skills learnt in this journey</h3><br>
+                            <hr><br>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Codepen</li>
+                                <li>Replit</li>
+                                <li>Stackblitz</li>
+                                <li>Git & Github</li>
+                                <li>Discord</li>
+                            </ul>
+                        </div> <!-- info card => icon, heading & list -->
+                    </div> <!-- side section => info card * 2 -->
+                </div> <!-- why-fac-page  => main section & side section -->
+            </div> <!-- Wrapper classs common for all pages -->
+        </div>
+        <!-- Full width footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-phone fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Call</p>
+                        <p>M: 0746 981 9413</p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-envelope fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Contact</p>
+                        <p>jasi_sumi@hotmail.co.uk</p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-plus fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>Follow me</p>
+                        <p>
+                            <a href="https://github.com/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.freecodecamp.org/Sumithra-Suresh" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-card"> 
+                    <div class="footer-icon-btn"><i class="fa-solid fa-copyright fa-style" ></i></div> 
+                    <div class="footer-card-details">
+                        <p>&copy; 2022 by SS</p>
+                        <p>Proudly created for F&C</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Link to JS file -->
+        <script src="script.js"></script>
+    </body>
+</html>
